@@ -73,6 +73,10 @@ header {
 	text-align: center;
 }
 
+.linkbar > a:visited {
+	color: #777777;
+}
+
 .linkbar > a:hover {
 	color: #4aaaa5; /*teal*/;
 }
@@ -437,24 +441,28 @@ input[type=submit]:active {
 
 .github-hl, .linkedin-hl, .stackoverflow-hl {
 	position: absolute;
-	bottom: 15px;
+	bottom: 14px;
 	z-index: -1;
 }
 
 .github-hl {
-	left: 56px;
+	left: 57px;
 }
 
 .linkedin-hl {
-	left: 91px;
+	left: 92px;
 }
 
 .stackoverflow-hl {
-	left: 176px;
+	left: 177px;
 }
 
 .github:hover .github-hl, .linkedin:hover .linkedin-hl, .stackoverflow:hover .stackoverflow-hl {
 	z-index: 0;
+}
+
+.github > img:hover {
+	z-index: -1;
 }
 
 /*Sidebar Ends*/
