@@ -332,11 +332,11 @@ input[id=name]:focus, input[id=email]:focus, textarea[id=message]:focus  {
 
 input[type=submit] {
 	font-family: arial;
-	color: rgb(0,0,0);
+	color: #777777;
 	background-color: rgb(255,255,255);
 	border-style: solid;
 	border-width: 2px;
-	border-color: rgb(0,0,0);
+	border-color: #777777;
 	width: 65px;
     height: 35px;
 	padding: 4px 2px 2px 2px;
@@ -345,6 +345,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	color: #4aaaa5; /*teal*/
+	border-color: #4aaaa5 /*teal*/;
 }
 
 input[type=submit]:active {
