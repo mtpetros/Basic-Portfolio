@@ -3,14 +3,11 @@ body {
 	background-image: url("../images/bg.png");
 	background-repeat: repeat;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	position: fixed;
+	left: 56px;
 }
 
-
-
-
-/*Header Begins*/
-
-header, .main, .sidebar, footer {
+.main, .sidebar {
 	position: absolute;
 }
 
@@ -33,20 +30,27 @@ h2, h3 {
 	color: #4aaaa5;
 }
 
+
+
+
+
+
+/*Header Begins*/
 header {
 	left: 0px;
 	top: 0px;
-	width: 960px;
+	width: 100%;
 	height: 50px;
 	border-bottom: 2px;
 	border-style: solid;	
 	border-color: #cccccc;
+	position: fixed;
 }
 
 .name {
-	left: 10px;
+	left: 56px;
 	top: 0px;
-	position: inherit;
+	position: absolute;
 	width: 250px;
 	height: 50px;
 	background-color: #4aaaa5; /*teal*/
@@ -54,9 +58,9 @@ header {
 }
 
 .linkbar {
-	left: 680px;
+	left: 807px;
 	top: 0px;
-	position: inherit;
+	position: absolute;
 	width: 150px;
 	height: 50px;
 	display: -webkit-flex;
@@ -358,7 +362,7 @@ input[type=submit]:active {
 /*Main Content Begins*/
 
 .main {
-	left: 10px;
+	left: 0px;
 	top: 75px;
 	width: 628px;
 	padding-left: 10px;
@@ -477,7 +481,7 @@ input[type=submit]:active {
 footer {
 	left: 0px;
 	bottom: 0px;
-	width: 960px;
+	width: 100%;
 	height: 30px;
 	line-height: 30px;
 	background-color: #666666;
@@ -487,6 +491,7 @@ footer {
 	font-size: 10px;
 	text-align: center;
 	color: #efefef;
+	position: fixed;
 }
 
 /*Footer Ends*/
